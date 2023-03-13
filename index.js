@@ -1,8 +1,36 @@
 module.exports = {
-  plugins: [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
-    '@semantic-release/npm',
-    '@semantic-release/gitlab',
+  "branches": [
+    "master",
+    {
+      "name": "beta",
+      "prerelease": true
+    },
+    {
+      "name": "alpha",
+      "prerelease": true
+    },
+    {
+      "name": "test-tagging",
+      "prerelease": true
+    },
+    "+([0-9])?(.{+([0-9]),x}).x"
   ],
+  "success": false,
+  "fail": false,
+  "chartPath": "deployments/helm/ac-backend",
+  "onlyUpdateVersion": true,
+  "tagFormat": "helm-${version}",
+  "plugins": [
+    "semantic-release-helm",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "deployments/helm/ac-backend/Chart.yaml"
+        ],
+        "message": "chore(release): update tags version to ${nextRelease.version}"
+      }
+    ],
+    "@semantic-release/gitlab"
+  ]
 };
