@@ -1,7 +1,7 @@
 {
   "name": "@andrzejgorski/semantic-release-helm-config",
   "description": "semantic-release helm configuration",
-  "version": "0.0.1-development",
+  "version": "0.0.2-development",
   "author": "Andrzej Górski (https://github.com/andrzejgorski)",
   "bugs": {
     "url": "https://github.com/semantic-release/gitlab-config/issues"
@@ -20,7 +20,7 @@
     "node": "^14.17 || >=16"
   },
   "files": [
-    "index.js"
+    ".releaserc.json"
   ],
   "homepage": "https://github.com/semantic-release/gitlab-config#readme",
   "keywords": [
@@ -32,7 +32,7 @@
     "version"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": ".releaserc.json",
   "peerDependencies": {
     "semantic-release": ">=18.0.0"
   },
