@@ -1,15 +1,11 @@
 {
-  "name": "@semantic-release/gitlab-config",
-  "description": "semantic-release shareable config to publish npm packages with GitLab",
+  "name": "@andrzejgorski/semantic-release-helm-config",
+  "description": "semantic-release helm configuration",
   "version": "0.0.0-development",
-  "author": "Pierre Vanduynslager (https://github.com/pvdlg)",
+  "author": "Andrzej Górski (https://github.com/andrzejgorski)",
   "bugs": {
     "url": "https://github.com/semantic-release/gitlab-config/issues"
   },
-  "contributors": [
-    "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me)",
-    "Gregor Martynus (https://twitter.com/gr2m)"
-  ],
   "dependencies": {
     "@semantic-release/commit-analyzer": "^9.0.1",
     "@semantic-release/gitlab": "^9.0.0",
@@ -49,7 +45,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/semantic-release/gitlab-config.git"
+    "url": "https://github.com/andrzejgorski/helm-config"
   },
   "scripts": {
     "semantic-release": "semantic-release",
