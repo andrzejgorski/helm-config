@@ -20,7 +20,7 @@
   "chartPath": "deployments/helm/ac-backend",
   "onlyUpdateVersion": true,
   "tagFormat": "helm-${version}",
-  "publish: [
+  "publish": [
     "semantic-release-helm",
     "@semantic-release/gitlab"
   ],
