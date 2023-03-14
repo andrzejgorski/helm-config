@@ -1,4 +1,4 @@
-module.exports = {
+{
   "branches": [
     "master",
     {
@@ -33,4 +33,4 @@ module.exports = {
     ],
     "@semantic-release/gitlab"
   ]
-};
+}
